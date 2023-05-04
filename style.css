@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  
+}
+/* Style the navigation bar */
+/* nav {
+	background-color: #333;
+	color: #fff;
+  } */
+  
+  nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+  }
+  
+  nav li {
+	margin-right: 20px;
+  }
+  
+  nav a {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  nav a:hover {
+	background-color: #ddd;
+	color: #333;
+  }
+  
+  /* Style the registration form */
+  form#register-form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 0 auto;
+  }
+  
+  form#register-form label {
+	margin-bottom: 10px;
+  }
+  
+  form#register-form input[type="text"],
+  form#register-form input[type="password"] {
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  }
+  
+  form#register-form button[type="submit"] {
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+  }
+  
+  form#register-form button[type="submit"]:hover {
+	background-color: #555;
+  }
+  
+  /* Style the search form */
+  form#search-form {
+	display: flex;
+  }
+  
+  form#search-form input[type="text"] {
+	padding: 10px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	flex-grow: 1;
+  }
+  
+  form#search-form button[type="submit"] {
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-left: 10px;
+  }
+  
+  form#search-form button[type="submit"]:hover {
+	background-color: #555;
+  }
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #ffffff;
+	background-image: url('img/background.jpeg'); 
+}
+
+.container {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.container .movie {
+	text-align: center;
+}
+
+.container .movie .title {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.container .movie .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.pages {
+	position: fixed;
+	bottom: 0;
+	background: #000000;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.pages button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.pages button:hover {
+	background: #650808;
+}
